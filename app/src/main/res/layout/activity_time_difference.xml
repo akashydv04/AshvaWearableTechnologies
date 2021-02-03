@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backgroud"
+    tools:context=".TimeDifferenceActivity">
+
+    <TextView
+        android:id="@+id/time_diff_heading"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:fontFamily="@font/amaranth_bold"
+        android:text="Time Difference From"
+        android:textColor="@color/purple_700"
+        android:textAlignment="center"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gemany_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="1. Germany"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/germany_edt"
+        app:layout_constraintEnd_toStartOf="@id/germany_edt"
+        app:layout_constraintStart_toStartOf="@+id/time_diff_heading"
+        app:layout_constraintTop_toTopOf="@+id/germany_edt" />
+
+    <EditText
+        android:id="@+id/germany_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/time_diff_heading"
+        app:layout_constraintStart_toEndOf="@+id/gemany_txt"
+        app:layout_constraintTop_toBottomOf="@id/time_diff_heading"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <TextView
+        android:id="@+id/london_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="2. London"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/london_edt"
+        app:layout_constraintEnd_toStartOf="@id/london_edt"
+        app:layout_constraintStart_toStartOf="@+id/time_diff_heading"
+        app:layout_constraintTop_toTopOf="@+id/london_edt" />
+
+    <EditText
+        android:id="@+id/london_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="@+id/time_diff_heading"
+        app:layout_constraintStart_toEndOf="@+id/london_txt"
+        app:layout_constraintTop_toBottomOf="@id/gemany_txt"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <TextView
+        android:id="@+id/tokyo_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="3. Tokyo"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/tokyo_edt"
+        app:layout_constraintEnd_toStartOf="@id/tokyo_edt"
+        app:layout_constraintStart_toStartOf="@+id/time_diff_heading"
+        app:layout_constraintTop_toTopOf="@+id/tokyo_edt" />
+
+    <EditText
+        android:id="@+id/tokyo_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/time_diff_heading"
+        app:layout_constraintStart_toEndOf="@+id/tokyo_txt"
+        app:layout_constraintTop_toBottomOf="@id/london_txt"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <TextView
+        android:id="@+id/melbourne_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="4. Melbourne"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/melbourne_edt"
+        app:layout_constraintEnd_toStartOf="@id/melbourne_edt"
+        app:layout_constraintStart_toStartOf="@+id/time_diff_heading"
+        app:layout_constraintTop_toTopOf="@+id/melbourne_edt" />
+
+    <EditText
+        android:id="@+id/melbourne_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/time_diff_heading"
+        app:layout_constraintStart_toEndOf="@+id/melbourne_txt"
+        app:layout_constraintTop_toBottomOf="@id/tokyo_txt"
+        tools:layout_editor_absoluteY="142dp" />
+
+    <TextView
+        android:id="@+id/kolkata_txt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="5. Kolkata"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/kolkata_edt"
+        app:layout_constraintEnd_toStartOf="@id/kolkata_edt"
+        app:layout_constraintStart_toStartOf="@+id/time_diff_heading"
+        app:layout_constraintTop_toTopOf="@+id/kolkata_edt" />
+
+    <EditText
+        android:id="@+id/kolkata_edt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_marginTop="20dp"
+        android:text="Name"
+        app:layout_constraintEnd_toEndOf="@+id/time_diff_heading"
+        app:layout_constraintStart_toEndOf="@+id/kolkata_txt"
+        app:layout_constraintTop_toBottomOf="@id/melbourne_edt"
+        tools:layout_editor_absoluteY="142dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
